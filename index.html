@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Obey the Light</title>
+<meta name="description" content="A pixel-art driving game: do whatever the traffic light says, or get sniped.">
+<style>
+  :root {
+    color-scheme: dark;
+    --ground: #0d0c16;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background-color: var(--ground);
+    background-repeat: repeat;
+    image-rendering: pixelated;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    touch-action: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  #screen {
+    display: block;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    background: #0b0b12;
+    outline: none;
+  }
+</style>
+</head>
+<body>
+<canvas id="screen" width="320" height="180" tabindex="0" aria-label="Obey the Light: a pixel art driving game. Do what the traffic light says or get sniped."></canvas>
+<script src="js/pixel.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/sprites.js"></script>
+<script src="js/world.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/input.js"></script>
+<script src="js/game.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
